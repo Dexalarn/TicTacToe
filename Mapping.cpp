@@ -12,13 +12,13 @@ tile::tile(int val) : value(val) {}
 
 std::string tile::DrawTile() const {
     if (value == 1) {
-        return "X";
+        return "X ";
     }
     else if (value == 2) {
-        return "O";
+        return "O ";
     }
     else {
-        return "\u25A0"; // Unicode character for a filled square
+        return "[]"; // Unicode character for a filled square
     }
 }
 
